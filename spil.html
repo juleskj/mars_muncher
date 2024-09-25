@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spil</title>
+    <link rel="stylesheet" href="spil.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="icon" href="svg/icon.svg">
+    <link rel="stylesheet" href="animationer.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+
+
+
+                <li><a href="index.html">Forside</a></li>
+                <li> <a href="ide.html">Ide</a></li>
+                <li><a href="spil.html">Mars Muncher</a></li>
+                <li id="logo"><a href="index.html"><img src="svg/icon.svg" alt="logo"></a></li>
+                <li><a href="grafik.html">Grafik</a></li>
+                <li><a href="teknik.html">Teknik</a></li>
+                <li> <a href="assets.html">Assets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mars Muncher</h1>
+
+
+
+        <div id="screen">
+
+            <div id="game">
+
+                <div id="game_background"> </div>
+                <div id="game_foreground"></div>
+                <div id="game_elements">
+
+
+                    <div id="marsbar_container1">
+                        <div id="marsbar_sprite1"></div>
+
+                    </div>
+
+
+                    <div id="marsbar_container2">
+                        <div id="marsbar_sprite2"></div>
+
+                    </div>
+
+                    <div id="marsbar_container3">
+                        <div id="marsbar_sprite3"></div>
+
+                    </div>
+
+                    <div id="marsbar_container4">
+                        <div id="marsbar_sprite4"></div>
+
+                    </div>
+
+                    <div id="astroide_container1">
+                        <div id="astroide_sprite1"></div>
+
+                    </div>
+
+                    <div id="astroide_container2">
+                        <div id="astroide_sprite2"></div>
+
+                    </div>
+
+
+                    <div id="astroide_container3">
+                        <div id="astroide_sprite3"></div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div id="game_ui">
+
+                    <div id="score_board">
+
+                        <div id="point_tal">0</div>
+
+                    </div>
+                    <div class="liv"></div>
+
+                    <div id="life1"></div>
+                    <div id="life2"></div>
+                    <div id="life3"></div>
+
+                    <div id="timer"></div>
+                    <div id="time_board">
+
+
+                    </div>
+                    <div id="alien_forside"></div>
+
+                </div>
+            </div>
+
+            <div id="start" class="hide">
+
+                <div class="start_container">
+                    <div id="start_knap" class="glow">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="game_over" class="hide">
+                <div id="gave_over_txt">
+
+                </div>
+                <div id="game_over_points">
+
+                </div>
+                <div class="genstart_container">
+
+                    <div id="genstart1" class="glow">
+
+                    </div>
+
+                    <div class="startside_knap glow">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="level_complete" class="hide">
+                <div id="level_complete_txt">
+
+                </div>
+                <div id="level_complete_points"></div>
+
+                <div class="genstart_container">
+                    <div id="genstart2" class="glow">
+
+                    </div>
+                    <div class="startside_knap glow">
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="sounds">
+            <!-- TODO: Tilføj audio elementer her -->
+            <audio src="lyde/bomb.wav" id="sound_astroide"></audio>
+
+            <audio src="lyde/knas.wav" id="sound_marsbar"></audio>
+
+
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

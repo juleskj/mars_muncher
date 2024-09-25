@@ -1,0 +1,273 @@
+/*********************************reset**********************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+/**********************************fonts / body**********************************/
+
+@font-face {
+  font-family: tirto;
+  src: url(fonts/TirtoWritterRegular-Eajrl.ttf);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+body {
+  background-color: #94bfff;
+  position: relative;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+h1 {
+  padding-top: 10px;
+  margin: 10px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: tirto;
+  letter-spacing: 2px;
+  color: #3b2089;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: tirto;
+  letter-spacing: 2px;
+  color: #250e69;
+}
+
+footer {
+  font-family: tirto;
+  letter-spacing: 4px;
+  color: #5ab67a;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+/*********************************menu**********************************/
+
+nav {
+  background-color: #4c80cd;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  font-family: tirto;
+  text-decoration: none;
+  color: #3b2089;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  color: #ab76d2;
+  background-color: #12428a;
+  border-radius: 2px;
+}
+
+#logo {
+  text-align: center;
+  width: 5%;
+}
+
+#logo a:hover {
+  background-color: #ffffff00;
+}
+
+/**********************************ideen og graik css**********************************/
+
+@media (min-width: 900px) {
+  .main_content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 5% 0;
+  }
+
+  .container {
+    flex: 1 0 300px;
+  }
+  #inspiration {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.container {
+  padding: 2% 0;
+  margin: 6px;
+}
+
+.container img {
+  background-color: #5f91db;
+  border-radius: 5px;
+}
+
+.container_fyld {
+  width: 100%;
+
+  padding: 2% 0;
+}
+
+.grid_1-2,
+.grid_2-1 .col {
+  margin: 10px;
+}
+
+.col {
+  padding: 2%;
+
+  background-color: #7aa8ec;
+  border-radius: 5px;
+}
+#inspiration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/**********************************assets css**********************************/
+
+article3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #5f91db;
+  border-radius: 5px;
+}
+
+article {
+  display: grid;
+  width: 100%;
+  background-color: #5f91db;
+  border-radius: 5px;
+}
+
+/**********************************index css**********************************/
+.grid_3-1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 0;
+}
+
+.container_span {
+  display: grid;
+  width: 100%;
+}
+
+.container_span img,
+.container_span .knap {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.container_span .knap {
+  text-align: center;
+  background-color: #3b2089;
+  margin: 10px 0px;
+  padding: 10px 25px;
+  border-radius: 3px;
+  border: 83px;
+  color: #f9b03d;
+  font-family: tirto;
+  letter-spacing: 2px;
+  font-size: 23px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.container_span .knap:hover {
+  filter: drop-shadow(0 4px 1px #a88bff);
+  color: #ffd694;
+}
+
+.container .knap:hover {
+  filter: drop-shadow(0 4px 1px #a88bff);
+  color: #ffd694;
+}
+
+.start_knap {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  margin: 0 auto 0 auto;
+  scale: 0.8;
+}
+
+/**********************************teknik css**********************************/
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+/**********************************kanp css**********************************/
+
+.container .knap {
+  text-align: center;
+  background-color: #3b2089;
+  margin: 10px 0 10px 0;
+  padding: 10px 0 10px 0;
+  border-radius: 3px;
+  color: #f9b03d;
+  font-family: tirto;
+  letter-spacing: 2px;
+  width: 100%;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+/**********************************planet forside css**********************************/
+.planet_container {
+  width: 41%;
+  z-index: -800;
+  aspect-ratio: 9/7;
+  margin: 0px auto 0 auto;
+  padding: 40px 0;
+}
+
+.planet_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(svg/planet.svg);
+  background-size: cover;
+}
